@@ -1,0 +1,16 @@
+{
+  "name": "tears",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tears.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@Synamedia/hs-sdk": "^3.15.13",
+    "shaka-player": "^3.2.9"
+  }
+}
