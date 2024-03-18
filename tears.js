@@ -1,6 +1,6 @@
 import { init, remotePlayer, uiReady, lifecycle } from "@Synamedia/hs-sdk";
 
-const ENCRYPTED_TEST_VIDEO="https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd";
+const ENCRYPTED_TEST_VIDEO = "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd";
 
 window.addEventListener("load", async () => {
   await init();
