@@ -2,17 +2,17 @@ const ENCRYPTED_TEST_VIDEO = "https://storage.googleapis.com/wvmedia/cenc/h264/t
 const WIDEVINE = "https://proxy.uat.widevine.com/proxy";
 
 window.addEventListener("load", async () => {
-  await hs.init();
-  hs.uiReady();
+  await senza.init();
+  senza.uiReady();
 });
 
 document.addEventListener("keydown", async (event) => {
-  const currentState = await hs.lifecycle.getState();
+  const currentState = await senza.lifecycle.getState();
   if (currentState === "background" || currentState === "inTransitionToBackground") {
-    hs.lifecycle.moveToForeground();
+    senza.lifecycle.moveToForeground();
   } else {
-    await hs.remotePlayer.load(ENCRYPTED_TEST_VIDEO);
-    hs.remotePlayer.play();
+    await senza.remotePlayer.load(ENCRYPTED_TEST_VIDEO);
+    senza.remotePlayer.play();
   }
 }, false);
 
